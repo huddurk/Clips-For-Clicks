@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clip for Clicks — AI Video Clipper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="glow glow-a"></div><div class="glow glow-b"></div>
+<header class="nav">
+  <a class="brand" href="#"><span class="brand-icon">▶</span><span>CLIP<span class="accent">FOR</span>CLICKS</span></a>
+  <span class="nav-pill"><i></i> AI CLIP STUDIO</span>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow"><span class="spark">✦</span> TURN LONG VIDEOS INTO SHORTS</div>
+    <h1>Your best moments.<br><span class="gradient">Clipped by AI.</span></h1>
+    <p class="sub">Drop in a video. Let AI find the moments worth watching.<br>Get vertical clips ready for TikTok, Reels, and Shorts.</p>
+  </section>
+
+  <section class="workspace">
+    <div class="panel-head"><div><span class="step">01</span><b>Upload your video</b></div><span class="muted">MP4, MOV, and more</span></div>
+    <form id="clipForm">
+      <label class="dropzone" id="dropzone" for="video">
+        <input type="file" id="video" name="video" accept="video/*" hidden>
+        <div class="upload-icon">↑</div>
+        <strong id="fileTitle">Drag your video here</strong>
+        <span id="fileHint">or <u>browse files</u> from your device</span>
+        <small>Maximum upload: 2 GB</small>
+      </label>
+      <div class="settings">
+        <div class="setting"><span class="setting-icon">✦</span><div><b>AI highlight detection</b><small>Finds interesting moments from the transcript</small></div><span class="toggle">ON</span></div>
+        <div class="setting"><span class="setting-icon">▯</span><div><b>Vertical video format</b><small>9:16 layout for short-form platforms</small></div><span class="toggle">ON</span></div>
+      </div>
+      <button class="primary" id="submitBtn" type="submit">✦ &nbsp; Find my best clips <span>→</span></button>
+    </form>
+    <div class="progress-wrap" id="progressWrap" hidden><div class="progress-top"><b id="status">Getting your video ready…</b><span class="spinner"></span></div><div class="progress-track"><div class="progress-bar"></div></div><small>First run may take a few minutes while the AI model downloads.</small></div>
+    <div class="error" id="error" hidden></div>
+    <section class="results" id="results" hidden>
+      <div class="results-title"><div><span class="step">02</span><b>Your clips are ready</b></div><span class="muted" id="resultCount"></span></div>
+      <div id="clipList" class="clip-list"></div>
+    </section>
+  </section>
+  <section class="features">
+    <div><span>✦</span><b>Find the highlights</b><p>AI scans the spoken content to surface promising moments.</p></div>
+    <div><span>▣</span><b>Made for vertical</b><p>Exports in a 9:16 format for short-form platforms.</p></div>
+    <div><span>↓</span><b>Download and post</b><p>Save your clips and review them before sharing.</p></div>
+  </section>
+  <p class="footnote">Your video is processed on your computer. This starter version does not upload it to a public server.</p>
+</main>
+<footer>© 2026 Clip for Clicks <span>MAKE EVERY SECOND COUNT.</span></footer>
+<script src="/static/app.js"></script>
+</body></html>

@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: clip-for-clicks
+    runtime: docker
+    plan: starter
+    healthCheckPath: /
+    autoDeploy: true
